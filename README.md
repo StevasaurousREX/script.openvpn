@@ -64,4 +64,4 @@ OpenVPN for Kodi is licensed under the [GPL 3.0 license][2].
 
 [1]: http://kodi.wiki/view/HOW-TO:Install_an_Add-on_from_a_zip_file
 [2]: http://www.gnu.org/licenses/gpl-3.0.html
-[3]: http://forums.tvaddons.ag/threads/24769-How-to-set-up-your-VPN-on-raspberry-pi-using-Brain-Hornsby-Openvpn-for-XBMC
+[3]: http://brianhornsby.com/blog/how-to-setup-your-vpn-client.php
