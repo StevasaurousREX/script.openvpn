@@ -11,8 +11,7 @@ Features
 
 Screenshots
 -----
-<img alt="Select OpenVPN configuration dialog" src="https://raw.github.com/brianhornsby/www_brianhornsby_com/master/img/openvpn_select_configuration.png" height="128"/>
-<img alt="Geo-location notifications" src="https://raw.github.com/brianhornsby/www_brianhornsby_com/master/img/openvpn_geolocation_notification.png" height="128"/>
+*Broken Links so I removed them. Maybe I'll take my own in the future.
 
 Installation
 ------
