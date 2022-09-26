@@ -1,20 +1,90 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<settings>
-	<category label="2000">
-		<setting label="2007" type="lsep"/>
-		<setting label="2001" type="action" action="RunScript(script.openvpn, import)"/>
-		<setting label="2002" type="action" action="RunScript(script.openvpn, delete)"/>
-		<setting label="2003" type="lsep"/>
-		<setting id="openvpn" type="file" label="2000" default="/usr/bin/openvpn"/>
-		<setting id="ip" type="ipaddress" label="2004" default="127.0.0.1"/>
-		<setting id="port" type="number" label="2005" default="1337"/>
-		<setting id="args" type="text" label="2006" default=""/>
-	</category>
-	<category label="2010">
-		<setting id="sudo" type="bool" label="2011" default="false"/>
-		<setting id="sudopwdrequired" type="bool" label="2012" default="true" enable="!eq(-1,false)"/>
-	</category>
-	<category label="2020">
-		<setting id="debug" type="bool" label="2021" default="false"/>
-	</category>
+ <?xml version="1.0" ?>
+<settings version="1">
+	<section id="script.openvpn">
+        <!-- <category label="2000"> -->
+		<category id="general" label="2000">
+        	<!-- <setting label="2007" type="lsep"/> -->
+			<group id="1" label="2007">
+                <!-- <setting label="2001" type="action" action="RunScript(script.openvpn, import)"/> -->
+				<setting id="s1" type="action" label="2001">
+                    <level>0</level>
+					<data type="action" action="RunScript(script.openvpn, import)"/>
+                    <control type="button" format="action">
+                        <close>false</close>
+                    </control>
+				</setting>
+                <!-- <setting label="2002" type="action" action="RunScript(script.openvpn, delete)"/> -->
+				<setting id="s2" type="action" label="2002">
+                    <level>0</level>
+					<data type="action" action="RunScript(script.openvpn, delete)"/>
+                    <control type="button" format="action">
+                        <close>false</close>
+                    </control>
+				</setting>
+			</group>
+            <!-- <setting label="2003" type="lsep"/> -->
+			<group id="2" label="2003">
+                <!-- <setting id="openvpn" type="file" label="2000" default="/usr/sbin/openvpn"/> -->
+				<setting id="openvpn" type="path" label="2000">
+                    <level>0</level>
+                    <default>/usr/sbin/openvpn</default>
+					<control type="button" format="file">
+                        <heading>2000</heading>
+                    </control>
+				</setting>
+                <!-- <setting id="ip" type="ipaddress" label="2004" default="127.0.0.1"/> -->
+				<setting id="ip" type="string" label="2004">
+                    <level>0</level>
+                    <default>127.0.0.1</default>
+					<control type="edit" format="ip">
+                        <heading>2004</heading>
+                    </control>
+				</setting>
+                <!-- <setting id="port" type="number" label="2005" default="1337"/> -->
+				<setting id="port" type="integer" label="2005">
+                    <level>0</level>
+                    <default>1337</default>
+					<control type="edit" format="integer">
+                        <heading>2005</heading>
+                    </control>
+				</setting>
+                <!-- <setting id="args" type="text" label="2006" default=""/> -->
+				<setting id="args" type="string" label="2006">
+                    <level>0</level>
+                    <default/>
+					<control type="edit" format="string">
+                        <heading>2006</heading>
+                    </control>
+				</setting>
+			</group>
+		</category>
+        <!-- <category label="2010"> -->
+        <category id="advanced" label="2010">
+            <group id="a1" label="2007">
+                <!-- <setting id="sudo" type="bool" label="2011" default="false"/> -->
+                <setting id="sudo" type="boolean" label="2011">
+                    <level>1</level>
+                    <default>false</default>
+                    <control type="toggle"/>
+                </setting>
+                <!-- <setting id="sudopwdrequired" type="bool" label="2012" default="true" enable="!eq(-1,false)"/> -->
+                <setting id="sudopwdrequired" type="boolean" label="2012">
+                    <level>1</level>
+                    <default>true</default>
+                    <control type="toggle"/>
+                </setting>
+            </group>
+        </category>
+        <!-- <category label="2020"> -->
+        <category id="debugmenu" label="2020">
+            <group id="d1" label="2007">
+                <!-- <setting id="debug" type="bool" label="2021" default="false"/> -->
+                <setting id="debug" type="boolean" label="2021">
+                    <level>2</level>
+                    <default>false</default>
+                    <control type="toggle"/>
+                </setting>
+            </group>
+        </category>
+	</section>
 </settings>

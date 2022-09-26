@@ -150,10 +150,10 @@ class OpenVPN:
 
     def _log_debug(self, msg):
         if self.debug:
-            print 'OpenVPN: DEBUG: %s' % msg
+            print('OpenVPN: DEBUG: %s' % msg)
 
     def _log_error(self, msg):
-        print 'OpenVPN: ERROR: %s' % msg
+        print('OpenVPN: ERROR: %s' % msg)
 
     def connect_to_interface(self, logerror):
         if self.interface is None:
@@ -210,3 +210,4 @@ class OpenVPN:
                 2, 'Unable to connect to OpenVPN management interface')
 
         self._log_debug('Connect OpenVPN successful')
+

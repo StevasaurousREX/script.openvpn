@@ -1,0 +1,150 @@
+# XBMC Media Center language file
+# Addon Name: OpenVPN
+# Addon id: script.openvpn
+# Addon version: 3.0.1
+# Addon Provider: brianhornsby
+msgid ""
+msgstr ""
+"Project-Id-Version: XBMC-Addons\n"
+"Report-Msgid-Bugs-To: alanwww1@xbmc.org\n"
+"POT-Creation-Date: 2022-09-26 05:24+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: UNKNOWN\n"
+"Plural-Forms: nplurals=2; plural=(n != 1)\n"
+
+msgctxt "Addon Summary"
+msgid "OpenVPN addon for Kodi."
+msgstr ""
+
+msgctxt "Addon Description"
+msgid "This addon allows you to set up a number of OpenVPN configurations, which you can then run from Kodi.\nFor more information on setting up this addon see http://brianhornsby.com/kodi_plugins/openvpn"
+msgstr ""
+
+msgctxt "#2000"
+msgid "OpenVPN"
+msgstr "OpenVPN"
+
+msgctxt "#2001"
+msgid "Import OpenVPN Configuration File"
+msgstr "Import OpenVPN Configuration File"
+
+msgctxt "#2002"
+msgid "Delete OpenVPN Configuration File"
+msgstr "Delete OpenVPN Configuration File"
+
+msgctxt "#2003"
+msgid "OpenVPN Settings"
+msgstr "OpenVPN Settings"
+
+msgctxt "#2004"
+msgid "Management IP Address"
+msgstr "Management IP Address"
+
+msgctxt "#2005"
+msgid "Management Port"
+msgstr "Management Port"
+
+msgctxt "#2006"
+msgid "Additional Arguments"
+msgstr "Additional Arguments"
+
+msgctxt "#2007"
+msgid "OpenVPN Configuration"
+msgstr "OpenVPN Configuration"
+
+msgctxt "#2010"
+msgid "Script"
+msgstr "Script"
+
+msgctxt "#2011"
+msgid "Use sudo when running OpenVPN"
+msgstr "Use sudo when running OpenVPN"
+
+msgctxt "#2012"
+msgid "Password is required"
+msgstr "Password is required"
+
+msgctxt "#2020"
+msgid "Advanced"
+msgstr "Advanced"
+
+msgctxt "#2021"
+msgid "Debug"
+msgstr "Debug"
+
+msgctxt "#3000"
+msgid "Import OpenVPN configuration file"
+msgstr "Import OpenVPN configuration file"
+
+msgctxt "#3001"
+msgid "Enter a name for OpenVPN configuration"
+msgstr "Enter a name for OpenVPN configuration"
+
+msgctxt "#3002"
+msgid "OpenVPN"
+msgstr "OpenVPN"
+
+msgctxt "#3003"
+msgid "An OpenVPN configuration already exists with that name. Overwrite?"
+msgstr "An OpenVPN configuration already exists with that name. Overwrite?"
+
+msgctxt "#3004"
+msgid "Import cancelled."
+msgstr "Import cancelled."
+
+msgctxt "#3005"
+msgid "Import failed. You must specify a name for the OpenVPN configuration."
+msgstr "Import failed. You must specify a name for the OpenVPN configuration."
+
+msgctxt "#3006"
+msgid "Are you sure you want to delete this OpenVPN configuration?"
+msgstr "Are you sure you want to delete this OpenVPN configuration?"
+
+msgctxt "#3007"
+msgid "Delete cancelled."
+msgstr "Delete cancelled."
+
+msgctxt "#3008"
+msgid "No OpenVPN configurations exist to delete."
+msgstr "No OpenVPN configurations exist to delete."
+
+msgctxt "#3009"
+msgid "An existing OpenVPN instance appears to be running."
+msgstr "An existing OpenVPN instance appears to be running."
+
+msgctxt "#3010"
+msgid "Disconnect it?"
+msgstr "Disconnect it?"
+
+msgctxt "#3011"
+msgid "An error has occurred whilst trying to connect OpenVPN"
+msgstr "An error has occurred whilst trying to connect OpenVPN"
+
+msgctxt "#3012"
+msgid "Enter your sudo password"
+msgstr "Enter your sudo password"
+
+msgctxt "#3013"
+msgid "Select OpenVPN configuration to run"
+msgstr "Select OpenVPN configuration to run"
+
+msgctxt "#3014"
+msgid "Disconnect OpenVPN"
+msgstr "Disconnect OpenVPN"
+
+msgctxt "#4000"
+msgid "IP: %s; Country: %s"
+msgstr "IP: %s; Country: %s"
+
+msgctxt "#4001"
+msgid "Stopped OpenVPN connection: %s"
+msgstr "Stopped OpenVPN connection: %s"
+
+msgctxt "#4002"
+msgid "Started OpenVPN connection: %s"
+msgstr "Started OpenVPN connection: %s"

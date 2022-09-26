@@ -21,6 +21,7 @@
 
 import xbmcaddon
 import xbmc
+import xbmcvfs
 
 
 class KodiSettings:
@@ -50,16 +51,17 @@ class KodiSettings:
         return len(self.__argv__)
 
     def get_datapath(self, path=''):
-        return xbmc.translatePath('%s/%s' % (self.__datapath__, path))
+        return xbmcvfs.translatePath('%s/%s' % (self.__datapath__, path))
 
     def get_name(self):
         return self.__name__
 
     def get_path(self, path=''):
-        return xbmc.translatePath('%s/%s' % (self.__path__, path))
+        return xbmcvfs.translatePath('%s/%s' % (self.__path__, path))
 
     def get_version(self):
         return self.__version__
 
     def open(self):
         self.__addon__.openSettings()
+

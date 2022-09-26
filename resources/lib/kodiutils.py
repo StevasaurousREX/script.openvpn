@@ -22,11 +22,11 @@
 import xbmc
 import xbmcgui
 import unicodedata
-import urllib
+import urllib.request, urllib.parse, urllib.error
 
 
 def normalize_unicode(text):
-    if text and not isinstance(text, unicode):
+    if text and not isinstance(text, str):
         return text
     if not text or len(text) == 0:
         return ''
@@ -58,7 +58,7 @@ def get_int(tuple, key):
 
 
 def add_params(root, params):
-    return '%s?%s' % (root, urllib.urlencode(params))
+    return '%s?%s' % (root, urllib.parse.urlencode(params))
 
 
 def browse(type, heading, shares='files', mask='', enablemultiple=False):
@@ -85,7 +85,7 @@ def notification(header, message, time=5000, image=''):
 
 def ok(heading, line1, line2='', line3=''):
     dialog = xbmcgui.Dialog()
-    dialog.ok(heading, line1, line2, line3)
+    dialog.ok(heading, line1 + line2 + line3)
 
 
 def select(heading, list):
@@ -112,5 +112,6 @@ def get_params(text):
             splitparams = {}
             splitparams = pairsofparams[i].split('=')
             if len(splitparams) == 2:
-                param[splitparams[0]] = urllib.unquote_plus(splitparams[1])
+                param[splitparams[0]] = urllib.parse.unquote_plus(splitparams[1])
     return param
+

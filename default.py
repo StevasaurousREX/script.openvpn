@@ -25,9 +25,9 @@ import sys
 import subprocess
 import threading
 import time
-import urllib2
+import urllib.request, urllib.error, urllib.parse
 import xbmc
-from BeautifulSoup import BeautifulSoup
+from bs4 import BeautifulSoup
 
 import resources.lib.openvpn as vpn
 import resources.lib.kodisettings as settings
@@ -46,18 +46,18 @@ _version = _settings.get_version()
 
 def log_debug(msg):
     if _settings['debug'] == 'true':
-        print 'script.openvpn: DEBUG: %s' % msg
+        print('script.openvpn: DEBUG: %s' % msg)
 
 
 def log_error(msg):
-    print 'script.openvpn: ERROR: %s' % msg
+    print('script.openvpn: ERROR: %s' % msg)
 
 log_debug('Addon Id:   [%s]' % (_addonid))
 log_debug('Addon Name: [%s]' % (_addonname))
 log_debug('Version:    [%s]' % (_version))
 
 # 'enum' of connection states
-(disconnected, failed, connecting, disconnecting, connected) = range(5)
+(disconnected, failed, connecting, disconnecting, connected) = list(range(5))
 _state = disconnected
 
 # Get addon settings values.
@@ -85,8 +85,8 @@ if _sudo:
 def get_geolocation():
     try:
         url = 'http://api.ipinfodb.com/v3/ip-city/?key=24e822dc48a930d92b04413d1d551ae86e09943a829f971c1c83b7727a16947f&format=xml'
-        req = urllib2.Request(url)
-        f = urllib2.urlopen(req)
+        req = urllib.request.Request(url)
+        f = urllib.request.urlopen(req)
         result = f.read()
         f.close()
         return BeautifulSoup(result)
