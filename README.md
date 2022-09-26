@@ -1,15 +1,13 @@
-This repository has been set to archived (read-only) as I no longer use Kodi, so development of this plugin has stopped.
+OpenVPN for Kodi 19
 ==========
-
-OpenVPN for Kodi
-==========
-A script that allows you to control OpenVPN from within Kodi.
+A script that allows you to control OpenVPN from within Kodi 19.
 
 Features
 -----
 - Start and stop OpenVPN from with Kodi.
 - Setup multiple VPN connections.
 - Display current geo-location.
+- Updated for Kodi 19 (Python 3)
 
 Screenshots
 -----
